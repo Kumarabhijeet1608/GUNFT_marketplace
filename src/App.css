@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body{
+  background-color: #28282B;
+  overflow-x: hidden;
+}
+
+/* Homepage CSS */
+
+/* Mobile responsive */
+@media screen and (max-width: 768px){
+  *{
+    overflow-x: hidden;
+  }
+
+  .offCounterNFTs{
+    flex-direction: column;
+  }
+
+  .lDisplay{
+    width: 200px;
+    flex-direction: column;
+    /* display: none; */
+  }
+
+  .lDisplay img{
+    display: none;
+  }
+
+  .rDisplay{
+    height: 1800px !important;
+    /* overflow-y: hidden; */
+    margin-block: 0px !important;
+  }
+
+  .r1Display,.r2Display{
+    width: 360px;
+    gap: 10px;
+  }
+
+  .r2Display{
+    margin-block: 2px;
+  }
+
+  .box1,.box2{
+    margin-block: 1px !important;
+    padding-block: 3px !important;
+    padding-inline: 7px !important;
+  }
+
+  .box3{
+    display: none !important;
+  }
+
+  .box3 img{
+    display: none;
+  }
+
+  .explore_product{
+    margin-inline: 5px !important;
+    width: 600px;
+  }
+
+  .nft{
+    flex-wrap: nowrap !important;
+  }
+
+  .categories{
+    width: 50% !important;
+  }
+
+  .categories button{
+    padding: 12px 12px !important;
+  }
+
+  .guidelines{
+    width: 400px;
+    margin: 0px !important;
+  }
+
+  .guidelines h1{
+    text-align: center;
+  }
+
+  .guide_holder{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* NFT Page */
+  .showcase_container{
+    width: 400px;
+    margin-inline: 7px !important;
+    flex-direction: column;
+    /* overflow-y: hidden !important; */
+  }
+
+  .showcase{
+    width: 100% !important;
+  }
+
+  .gun_model{
+    overflow-y:hidden;
+  }
+
+}
+
+
+.offCounter{
+  /* border: 1px solid green; */
+  height: 470px;
+  margin-block: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.offCounterNFTs{
+  height: inherit;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.lDisplay{
+  background-color: #1f1e2d;
+  width: 500px;
+  height: auto;
+  border: none;
+  border-radius: 3px;
+  margin: 16px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lDisplay img{
+  position: absolute;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 450px;
+  height: 414px;
+  object-fit: cover;
+}
+
+.gun_name_ID{
+  /* border: 1px solid red; */
+  position: relative;
+  top: 180px;
+  left: -90px;
+}
+
+.lDisplay img {
+	width: 450px;
+	height: 414px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.lDisplay:hover img {
+	width: 400px;
+}
+
+.gun_name_ID p{
+  color: white;
+  font-size: 3rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.gun_name_ID p:hover{
+  color: black;
+}
+
+.rDisplay{
+  width: 670px;
+  margin: 12px;
+}
+
+.r1Display,.r2Display{
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.r1Display{
+  margin-block: 0px;
+  margin-inline: 15px;
+}
+
+.r2Display{
+  margin-block: 10px;
+  margin-inline: 15px;
+}
+
+.box1,.box2,.box3{
+  background-color: #1f1e2d;
+  padding:6px 4.5px;
+  height: 190px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 1.09px;
+  margin-block: 5px;
+
+}
+
+.box1 img,.box2 img,.box3 img{
+  position: absolute;
+  cursor: pointer;
+  height: 180px;
+  width: 170px;
+  object-fit: cover;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.box1:hover img,.box2:hover img,.box3:hover img{
+  width: 150px;
+}
+
+.gun_Dname{
+  position: relative;
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Bebas Neue', cursive;
+  top: 75px;
+  left: -20px;
+}
+
+.gun_Dname:hover{
+  color: black;
+}
+
+.explore_product{
+  /* border: 1px solid red; */
+  margin-inline: 90px;
+  height: auto;
+}
+
+.heading{
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px ;
+  margin-left: 10px;
+  color: white;
+}
+
+.categories{
+  width: 40%;
+  margin-left:10px ;
+  margin-block: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories button{
+  padding: 12px 20px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid blue;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nft_holder{
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  
+}
+
+.nft{
+  background-color: #1f1e2d;
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  height: 350px;
+}
+
+
+.image_holder img{
+  border-radius: 10px;
+  width: 175px;
+  height: 170px;
+  margin-block: 10px;
+  margin-inline: 10px;
+  object-fit: fill;
+
+}
+
+.nft h2{
+  font-family: 'Bebas Neue', cursive;
+  margin-inline: 15px;
+  margin-block: 10px;
+  color: white;
+  font-weight: 200;
+}
+
+.cost{
+  font-family: 'Almarai', sans-serif;
+  display: flex;
+  margin-inline: 17px;
+  color: white;
+  font-size: 1.2rem;
+  margin-block: 20px;
+}
+
+.favs{
+  margin-left: auto;
+}
+
+.guidelines{
+  margin-top: 40px;
+  margin-inline: 90px;
+}
+
+.guide_holder{
+  margin-block: 40px;
+  display: flex;
+}
+
+
+.guide{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #1f1e2d;
+  border-radius: 5px;
+  margin-inline: 5px;
+  width: 300px;
+  padding-inline:15px;
+  margin-top: 30px;
+  height: 270px;
+}
+
+.guide img{
+  margin-block: 20px;
+  padding-top: 10px;
+}
+
+
+
+
+.guide h2{
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  color: white;
+  margin-block: 14px;
+}
+
+.guide p{
+  font-family: 'Almarai', sans-serif;
+  letter-spacing: 0.5px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+
+/* NFTs CSS */
+
+.showcase_container{
+  margin-block:40px;
+  margin-inline: 60px;
+  background-color: #1f1e2d;
+  display: flex;
+}
+
+.showcase{
+  /* border: 1px solid green; */
+  width: 65%;
+  height: 550px;
+  border-radius: 12px;
+
+}
+
+.gun_model{
+  /* border: 1px solid red; */
+  height: 350px;
+  border-radius: 12px;
+
+  
+}
+
+.canvas_bg{
+  /* background: linear-gradient(90deg, hsla(55, 100%, 34%, 1) 0%, hsla(178, 100%, 12%, 1) 100%); */
+  /* background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%); */
+  background: linear-gradient(90deg, hsla(51, 95%, 37%, 1) 0%, hsla(0, 0%, 9%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B79C05", endColorstr="#161616", GradientType=1 );
+  border-radius: 6px;
+  margin-block: 12px;
+  margin-inline: 10px;
+}
+
+.gun_model_name{
+  margin-top: 12px;
+  font-size: 3rem;
+  margin-inline: 15px;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.gun_model_desc{
+  margin-inline: 15px;
+  margin-block: 10px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+}
+
+.showcase_details{
+  /* border: 1px solid black; */
+  margin-left: 25px;
+  width: max-content;
+  margin-block: 12px;
+}
+
+
+/* GUN LAB CSS */
+
+@media screen and (max-width: 768px){
+  .guns_container{
+    flex-direction: column;
+    margin-inline: 33px !important;
+  }
+
+  .gun_holder{
+    width: 350px !important;
+  }
+}
+.guns_container{
+  /* border: 1px solid red; */
+  margin-block: 40px;
+  margin-inline: 40px;
+  display: flex;
+  justify-content:space-between ;
+  gap: 10px;
+}
+
+.gun_holder{
+  /* border: 1px solid green; */
+  width: 350px;
+  height: 400px;
+  background-color: #1f1e2d;
+  border-radius: 7px;
+}
+
+.gun_subholder{
+  /* border: 1px solid yellow; */
+  margin: 12px 12px;
+  height: 375px;
+}
+
+.gun img{
+  border-radius: 7px;
+  width: 324px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gun_name{
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 3rem;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.gun_name:hover{
+  color: coral;
+}
+
+.short_desc{
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-size: 0.7rem;
+  margin-left: 4px;
+}
+
+
+/* Auglab CSS */
+.skin_selects h2{
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.2rem;
+  margin-left:10px;
+  margin-top: 20px;
+}
+
+.skins_holder{
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  margin-inline: 12px;
+  display: flex;
+  gap: 20px;
+}
+
+.skin{
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+}
+
+.skin img{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+
+
+.scope_availability,
+.muzzle_availability{
+  background-color: #292833;
+  border-radius: 8px;
+  padding-inline: 19px;
+  display: flex;
+  align-items: center;
+  margin-block: 18px;
+  gap: 30px;
+  margin-right: 9px;
+}
+
+.scope_availability h2,
+.muzzle_availability h2{
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  margin-block: 10px;
+  width: 166px;
+}
+
+.checks{
+  /* border: 1px solid red; */
+}
+
+.checks button{
+  padding: 5px 12px;
+  margin-inline: 8px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.checks button:hover{
+  background-color: chocolate;
+}
+
+.para,.para_cap{
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.7rem;
+  margin-inline: 12px;
+  margin-block: 10px;
+  width: 280px;
+}
+
+.para_cap{
+  font-size: 0.9rem;
+  margin-inline: 58px;
+  margin-block: 20px;
+  margin-bottom: 40px;
+}
+
+hr{
+  color: #28282B;
+  width: 230px;
+  margin: auto;
+  margin-block: 35px;
+}
+
+.mint_nft{
+  display: flex;
+  justify-content: center;
+  background-color: #202e49;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border: 1px solid white;
+  margin-inline: 90px;
+  margin-block: 34px;
+  padding: 12px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.mint_nft:hover{
+  background-color: blue;
+}
+
+/* Dashboard CSS */
+.wallet_info_dash{
+  /* border: 1px solid red; */
+  background-color: #1f1e2d;
+  border-radius: 10px;
+  padding-block: 10px;
+  margin-block: 40px;
+  margin-inline: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user{
+  display: flex;
+  margin-inline: 40px;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+
+.user_dp img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-inline: 40px;
+}
+
+.userName{
+  color: white;
+  font-size: 1.7rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+}
+
+.userid{
+  margin-inline: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.your_skins{
+  margin-inline: 80px;
+}
+
+.your_skins h2{
+  color: white;
+  font-size: 1.7rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
